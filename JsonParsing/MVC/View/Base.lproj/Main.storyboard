@@ -41,9 +41,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oia-k2-usV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oia-k2-usV">
                                                     <rect key="frame" x="10" y="44" width="350" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -51,16 +50,21 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="dvT-LN-hW1" secondAttribute="trailing" constant="15" id="0jW-i4-rc3"/>
+                                                <constraint firstItem="dvT-LN-hW1" firstAttribute="top" secondItem="oia-k2-usV" secondAttribute="bottom" constant="8.5" id="1dD-b5-6bW"/>
                                                 <constraint firstAttribute="trailing" secondItem="Qp6-A7-q9C" secondAttribute="trailing" constant="10" id="L7o-kp-yEz"/>
                                                 <constraint firstItem="Qp6-A7-q9C" firstAttribute="top" secondItem="PC9-Zo-ocY" secondAttribute="top" constant="10" id="NpZ-E3-9FQ"/>
+                                                <constraint firstItem="oia-k2-usV" firstAttribute="top" secondItem="Qp6-A7-q9C" secondAttribute="bottom" constant="13" id="X33-u3-5Th"/>
                                                 <constraint firstItem="Qp6-A7-q9C" firstAttribute="leading" secondItem="PC9-Zo-ocY" secondAttribute="leading" constant="10" id="bdg-cW-Ojf"/>
                                                 <constraint firstAttribute="bottom" secondItem="dvT-LN-hW1" secondAttribute="bottom" constant="16.5" id="bkH-Yh-BVN"/>
                                                 <constraint firstItem="dvT-LN-hW1" firstAttribute="leading" secondItem="PC9-Zo-ocY" secondAttribute="leading" constant="10" id="fSj-Gq-xGh"/>
+                                                <constraint firstAttribute="trailing" secondItem="oia-k2-usV" secondAttribute="trailing" constant="15" id="sFu-ub-45R"/>
+                                                <constraint firstItem="oia-k2-usV" firstAttribute="leading" secondItem="PC9-Zo-ocY" secondAttribute="leading" constant="10" id="zMQ-aK-G8D"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="lblBody" destination="dvT-LN-hW1" id="9S4-is-GXI"/>
                                             <outlet property="lblTitle" destination="Qp6-A7-q9C" id="qPr-Yl-oVR"/>
+                                            <outlet property="lblUserId" destination="oia-k2-usV" id="04a-vf-AmR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

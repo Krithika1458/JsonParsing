@@ -71,7 +71,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             if let _ = dict {
                 cell.lblTitle.text = dict!["title"] as? String
                 let userid = dict!["userId"] as! Int
-                cell.lblUserId.text = String(format: "UserId: %d",userid)
+
+                cell.lblUserId.text = String(format: "userId: %d",userid)
                 cell.lblBody.text = dict!["body"]as? String
             }
         }
