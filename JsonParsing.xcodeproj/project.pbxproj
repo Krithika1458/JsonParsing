@@ -14,6 +14,7 @@
 		F17B2B4A214CF5B300392AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17B2B48214CF5B300392AE2 /* LaunchScreen.storyboard */; };
 		F17B2B55214CF5B300392AE2 /* JsonParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B2B54214CF5B300392AE2 /* JsonParsingTests.swift */; };
 		F17B2B60214CF5B300392AE2 /* JsonParsingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B2B5F214CF5B300392AE2 /* JsonParsingUITests.swift */; };
+		F17B2B73214D123F00392AE2 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B2B72214D123F00392AE2 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F17B2B5B214CF5B300392AE2 /* JsonParsingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonParsingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17B2B5F214CF5B300392AE2 /* JsonParsingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParsingUITests.swift; sourceTree = "<group>"; };
 		F17B2B61214CF5B300392AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17B2B72214D123F00392AE2 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,9 @@
 		F17B2B3E214CF5B100392AE2 /* JsonParsing */ = {
 			isa = PBXGroup;
 			children = (
-				F17B2B3F214CF5B100392AE2 /* AppDelegate.swift */,
-				F17B2B41214CF5B100392AE2 /* ViewController.swift */,
-				F17B2B43214CF5B100392AE2 /* Main.storyboard */,
+				F17B2B6E214D115200392AE2 /* MVC */,
+				F17B2B6D214D110F00392AE2 /* AppDelegate */,
 				F17B2B46214CF5B300392AE2 /* Assets.xcassets */,
-				F17B2B48214CF5B300392AE2 /* LaunchScreen.storyboard */,
 				F17B2B4B214CF5B300392AE2 /* Info.plist */,
 			);
 			path = JsonParsing;
@@ -123,6 +123,49 @@
 				F17B2B61214CF5B300392AE2 /* Info.plist */,
 			);
 			path = JsonParsingUITests;
+			sourceTree = "<group>";
+		};
+		F17B2B6D214D110F00392AE2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F17B2B3F214CF5B100392AE2 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F17B2B6E214D115200392AE2 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				F17B2B71214D118000392AE2 /* Model */,
+				F17B2B70214D117800392AE2 /* View */,
+				F17B2B6F214D116D00392AE2 /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		F17B2B6F214D116D00392AE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F17B2B41214CF5B100392AE2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F17B2B70214D117800392AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F17B2B43214CF5B100392AE2 /* Main.storyboard */,
+				F17B2B48214CF5B300392AE2 /* LaunchScreen.storyboard */,
+				F17B2B72214D123F00392AE2 /* PostTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F17B2B71214D118000392AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +301,7 @@
 			files = (
 				F17B2B42214CF5B100392AE2 /* ViewController.swift in Sources */,
 				F17B2B40214CF5B100392AE2 /* AppDelegate.swift in Sources */,
+				F17B2B73214D123F00392AE2 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
