@@ -13,6 +13,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblUserId: UILabel!
     @IBOutlet weak var lblBody: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
